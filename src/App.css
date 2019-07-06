@@ -1,0 +1,17 @@
+.App {
+  text-align: center;
+ 
+}
+.abc{
+  text-align: center;
+  padding: 15px;
+}
+.Main{
+  text-align: center;
+  padding-top: 70px;
+  padding: 69px;
+}
+.back{
+  background-image: url(./shared/abc.jpg);
+}
+

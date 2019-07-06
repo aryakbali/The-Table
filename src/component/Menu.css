@@ -1,0 +1,73 @@
+.image{
+    padding-top: 50px;
+    box-shadow: 10px 10px 10px black;
+    border: 2px solid black;
+    padding: 10px;
+}
+.dish1{
+    background-color: rgb(236, 125, 125);
+}
+#my{
+    height: 250px;
+    width:300px;
+    
+}
+#aab{
+    color: white;
+}
+#my1{
+    width: 100%;
+    background-color: rgba(109, 102, 102, 0.541);
+    font-weight:bold; 
+    
+}
+#my2{
+    width: 1100px;
+    box-shadow: 10px 10px 10px black;
+    border: 2px solid black;
+    padding: 10px;
+}
+#a1{
+    text-align: center;
+    width:300px;
+    height: 250px;
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid wheat;
+    box-shadow: 10px 10px 10px black;
+   
+}
+#mo{
+    padding: 40px;
+    text-shadow: 5px 5px 5px sienna;
+    color: brown;
+}
+
+#a2{
+font-size: 35px;
+font-style: italic;
+font-family: 'Courier New', Courier, monospace;
+color: brown;
+font-weight: bolder;
+}
+#a3{
+    font-size: 20px;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    font-weight: 600  ;
+    
+}
+
+#a4{
+    font-size: 20px;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    color:crimson;
+    font-weight: 600  ;
+    
+}
+#box{
+    width: 250%;
+    align-items:center;
+}

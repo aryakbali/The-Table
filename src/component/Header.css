@@ -1,0 +1,35 @@
+.jumbotron {
+    margin-bottom: 0px;
+    background-image:linear-gradient(to right,
+    rgba(190, 135, 135, 0.705),
+     rgba(212, 224, 212, 0.068)),
+    url('../shared/meal-wallpapers-hd-68857-8430265.png');
+    width: auto;
+    background-size:cover;
+    background-repeat: no-repeat;
+    color: rgb(248, 247, 247);
+    text-shadow: 3px 5px 3px black;
+}
+.display-3{
+    font-weight: bolder;
+    color: rgb(177, 46, 46);
+}
+#black{
+    background: rgb(189, 148, 148)
+    ;
+}
+.nav-link{
+    background: rgba(185, 73, 73, 0.767);
+    
+}
+.abb{
+    font-size: 33px;
+    font-weight: bold
+}
+.bbb{
+    font-size:20px;
+    font-weight: bold
+}
+.abc{
+    color: rgb(177, 46, 46);
+}
