@@ -1,11 +1,11 @@
 import React,{Component} from 'react';
-import { Card, CardImg,CardSubtitle, CardText, CardBody,
+import { Card, CardImg, CardText, CardBody,
     CardTitle } from 'reactstrap';
     import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import { Collapse, Button} from 'reactstrap';
 import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
 import './Menu.css';
 
@@ -20,7 +20,7 @@ export default class Menu extends Component {
         this.state = {
           selectedDish: null,
 
-            modal: false,
+          collapse: false 
           
           };
                this.toggle = this.toggle.bind(this);
@@ -28,10 +28,8 @@ export default class Menu extends Component {
   }
   
   toggle() {
-    this.setState(prevState => ({
-      modal: !prevState.modal
-    }));
-  }
+    this.setState(state => ({ collapse: !state.collapse }));
+  }  
   onDishSelect(dish) {
     this.setState({ selectedDish: dish});
 }
@@ -84,17 +82,16 @@ renderDish(dish) {
         </CardActionArea>
         </Card>
         <div>
-        <Button color="danger" onClick={this.toggle}>{this.props.buttonLabel} MORE DETAILS</Button>
-        <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
-          <ModalHeader toggle={this.toggle}>Modal title</ModalHeader>
-          <ModalBody>
-{dish.description   }     
-  </ModalBody>
-          <ModalFooter>
-            <Button color="primary" onClick={this.toggle}>Do Something</Button>{' '}
-            <Button color="secondary" onClick={this.toggle}>Cancel</Button>
-          </ModalFooter>
-        </Modal>
+        <Button id="neww" onClick={this.toggle} style={{ marginBottom: '1rem' }}>More Details</Button>
+        <Collapse isOpen={this.state.collapse}>
+          <Card>
+            <CardBody>
+              {dish.name}<br></br><hr></hr>
+{dish.description}
+            </CardBody>
+          </Card>
+        </Collapse>
+
       </div>
 
 

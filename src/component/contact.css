@@ -1,6 +1,12 @@
 .bbb{
-    color: aliceblue
+    color: aliceblue;
 }
 #color{
+    color: aliceblue;}
+#aaa{
+    text-emphasis-color: black
+}
+#abc{
     color: aliceblue;
+   
 }
